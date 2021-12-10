@@ -1,6 +1,7 @@
 * {
   margin: 0;
 }
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&display=swap");
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -8,7 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #f6efee;
-  font-family: "Cambria", Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Domine", serif;
 }
 .header {
   grid-area: header;
