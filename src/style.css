@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+}
 body {
-  background-color: red;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 70px 1fr 50px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6efee;
+  font-family: "Cambria", Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.header {
+  grid-area: header;
+  background-color: black;
+  color: silver;
+  align-items: center;
+  gap: 10px;
+}
+.main {
+  background-color: aqua;
+}
+.footer {
+  background-color: black;
+  color: aliceblue;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.5px;
+  width: 97%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.github-logo {
+  width: 20px;
+  height: 20px;
+  transition: all 300ms linear;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px beige;
+  cursor: pointer;
+  color: orange;
+  /* filter: invert(73%) sepia(81%) saturate(870%) hue-rotate(357deg)
+    brightness(95%) contrast(93%); */
+}
+.github-logo:hover {
+  transform: rotate(360deg) scale(1.3);
+  box-shadow: 0px 0px 5px blue;
 }
