@@ -37,12 +37,12 @@ body {
   max-width: 100px;
   height: auto;
 }
-#convert-units-btn {
-  position: absolute;
-  left: 0.5em;
-  top: 0.5em;
-  background-color: var(--green);
-  color: var(--light);
+.convert-units-btn {
+  /* position: absolute;
+   left: 0.5em;
+  top: 0.5em; */
+  background-color: grey;
+  color: wheat;
   border: 0;
   border-radius: 50%;
   outline: 0;
@@ -57,6 +57,9 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   transition: filter 0.3s ease;
+}
+.convert-units-btn:hover {
+  background-color: tomato;
 }
 .github-logo {
   width: 20px;
