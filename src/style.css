@@ -14,26 +14,50 @@ body {
 .header {
   grid-area: header;
   background-color: black;
-  color: silver;
   align-items: center;
-  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 55px 0px 55px;
 }
 .main {
   background-color: aqua;
 }
 .footer {
+  grid-area: footer;
   background-color: black;
   color: aliceblue;
-  grid-area: footer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6.5px;
-  width: 97%;
   padding: 10px;
   font-size: 20px;
 }
-
+.openweathermap-icon {
+  max-width: 100px;
+  height: auto;
+}
+#convert-units-btn {
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  background-color: var(--green);
+  color: var(--light);
+  border: 0;
+  border-radius: 50%;
+  outline: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
 .github-logo {
   width: 20px;
   height: 20px;
