@@ -20,9 +20,24 @@
         />
       </div>
     </div>
-    <div class="main">
-      <div class="button-container">
-        <button id="convert-units-btn">C°</button>
+    <div id="main" class="main">
+      <div id="main-screen" class="main-screen">
+        <p>checkWeatherApp</p>
+        <div id="weather-form" class="weather-form">
+          <div class="form-div">
+            <input
+              type="text"
+              name="search-input"
+              class="search-input"
+              id="search-input"
+              placeholder="Your city here"
+            />
+            <button id="search-btn" class="search-btn">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+          </div>
+          <small id="error">Remember where I live</small>
+        </div>
       </div>
     </div>
     <footer class="footer">
