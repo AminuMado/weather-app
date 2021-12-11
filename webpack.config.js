@@ -39,11 +39,11 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      // {
+      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
 
-        type: "asset/resource",
-      },
+      //   type: "asset/resource",
+      // },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
 
