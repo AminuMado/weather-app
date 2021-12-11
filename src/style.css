@@ -19,6 +19,12 @@ body {
   justify-content: space-between;
   padding: 0px 55px 0px 55px;
 }
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .main {
   display: flex;
   justify-content: center;
@@ -41,9 +47,6 @@ body {
   height: auto;
 }
 .convert-units-btn {
-  /* position: absolute;
-   left: 0.5em;
-  top: 0.5em; */
   background-color: grey;
   color: wheat;
   border: 0;
@@ -63,6 +66,9 @@ body {
 }
 .convert-units-btn:hover {
   background-color: tomato;
+}
+.main-screen {
+  display: none;
 }
 .main p {
   font-size: 3em;
