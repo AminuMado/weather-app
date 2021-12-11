@@ -20,7 +20,10 @@ body {
   padding: 0px 55px 0px 55px;
 }
 .main {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
 }
 .footer {
   grid-area: footer;
@@ -60,6 +63,105 @@ body {
 }
 .convert-units-btn:hover {
   background-color: tomato;
+}
+.main p {
+  font-size: 3em;
+  margin-top: -1em;
+  text-align: center;
+}
+.search-input {
+  flex: 1;
+  justify-self: center;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid darkgoldenrod;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.5em;
+  transition: border 0.3s ease;
+}
+.search-input:focus {
+  border-bottom: 2px solid green;
+}
+.search-btn,
+.return-btn {
+  background-color: darkgoldenrod;
+  color: black;
+  border: 0;
+  border-radius: 50%;
+  outline: 0;
+  font-size: 1.8em;
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.search-btn:hover,
+.return-btn:hover {
+  background-color: darksalmon;
+}
+.search-btn:active,
+.return-btn:active {
+  transform: scale(1.1);
+}
+.search-icon {
+  transform: scale(0.6);
+}
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.form-div {
+  display: flex;
+  align-items: center;
+}
+.result-forecast {
+  display: flex;
+  flex-wrap: wrap;
+}
+.result-content {
+  width: 300px;
+  height: 260px;
+  border: 3px solid;
+  color: aliceblue;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.date {
+  font-size: 1.8em;
+}
+.weather-gif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 170px;
+  position: relative;
+  justify-content: flex-end;
+}
+.result-weather-desc {
+  position: absolute;
+  bottom: 20%;
+}
+.summary-item {
+  display: flex;
+  gap: 5px;
+  font-size: 1.5em;
+  margin-top: -20%;
+}
+.result-L {
+  border-left: 3px solid;
+  padding-left: 6px;
 }
 .github-logo {
   width: 20px;
