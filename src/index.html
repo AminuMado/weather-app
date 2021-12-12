@@ -25,7 +25,7 @@
     </div>
     <div id="main" class="main">
       <div id="main-screen" class="main-screen">
-        <p>checkWeatherApp</p>
+        <h3>checkWeatherApp</h3>
         <div id="weather-form" class="weather-form">
           <div class="form-div">
             <input
@@ -43,6 +43,59 @@
         </div>
       </div>
       <div id="result-screen" class="result-screen">
+        <div id="current-weather-container" class="current-weather-container">
+          <div class="current-weather-date-container">
+            <p id="current-weather-date" class="current-weather-date">
+              Sunday, 12th Dec '21
+            </p>
+            <p id="current-weather-time" class="current-weather-time">
+              6:10 am
+            </p>
+          </div>
+          <div id="current-weather-location" class="current-weather-location">
+            <p id="current-weather-city" class="current-weather-city">Laos</p>
+            <p id="current-weather-country" class="current-weather-country">
+              LA
+            </p>
+          </div>
+          <div id="current-weather-gif" class="current-weather-gif">
+            <div id="current-weather-desc" class="current-weather-desc">
+              Light Rain
+            </div>
+          </div>
+          <div class="current-weather-details-container">
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Feels Like</div>
+                <div class="weather-details-data" id="feels-like">20 °C</div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Humidity</div>
+                <div class="weather-details-data" id="humidity">95 %</div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Chance of Rain</div>
+                <div class="weather-details-data" id="chance-of-rain">
+                  0.98 %
+                </div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Wind Speed</div>
+                <div class="weather-details-data" id="wind-speed">3.2 km/h</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="result-forecast" class="result-forecast">
           <div id="result-content" class="result-content">
             <div id="date" class="date">Monday</div>
@@ -88,6 +141,20 @@
           </div>
           <div id="result-content" class="result-content">
             <div id="date" class="date">Thursday</div>
+            <div id="weather-gif" class="weather-gif">
+              <div id="result-weather-desc" class="result-weather-desc">
+                clear sky
+              </div>
+            </div>
+            <div id="result-summary">
+              <div class="summary-item">
+                <div id="result-H" class="result-H">27°H</div>
+                <div id="result-L" class="result-L">10°L</div>
+              </div>
+            </div>
+          </div>
+          <div id="result-content" class="result-content">
+            <div id="date" class="date">Friday</div>
             <div id="weather-gif" class="weather-gif">
               <div id="result-weather-desc" class="result-weather-desc">
                 clear sky

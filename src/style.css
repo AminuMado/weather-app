@@ -70,7 +70,7 @@ body {
 .main-screen {
   display: none;
 }
-.main p {
+.main-h3 {
   font-size: 3em;
   margin-top: -1em;
   text-align: center;
@@ -127,6 +127,61 @@ body {
 .form-div {
   display: flex;
   align-items: center;
+}
+.current-weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  color: snow;
+  position: relative;
+}
+.current-weather-date-container {
+  position: absolute;
+  top: 0;
+  font-size: 1.5rem;
+}
+.current-weather-location {
+  display: flex;
+  gap: 5px;
+  font-size: 4rem;
+}
+.current-weather-country {
+  display: flex;
+  align-items: flex-end;
+  border-left: 2px solid white;
+  padding-left: 5px;
+  font-size: 2rem;
+}
+.current-weather-gif {
+  width: 40%;
+  min-width: 285px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current-weather-desc {
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+}
+
+.weather-details {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.weather-details-icon {
+  width: 4rem;
+  margin-right: 1rem;
+}
+.weather-details-label {
+  font-size: 1.4rem;
+}
+.weather-details-data {
+  font-size: 2.6rem;
+  font-weight: 600;
 }
 .result-forecast {
   display: flex;
