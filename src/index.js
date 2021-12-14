@@ -1,7 +1,5 @@
 import "./style.css";
 import moment from "moment";
-import imgSrc from "./assets/img/all/partly-cloudy-day.svg";
-import partlyCloudyNightRainSrc from "./assets/img/all/partly-cloudy-night-rain.svg";
 import thermometerSrc from "./assets/img/icons/thermometer.svg";
 import rainSrc from "./assets/img/icons/rain.svg";
 import raindropSrc from "./assets/img/icons/raindrop.svg";
