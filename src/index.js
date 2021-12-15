@@ -189,3 +189,24 @@ function getIcon(code) {
       return;
   }
 }
+// Event Listeners
+const mainScreen = document.getElementById("main-screen");
+const forecastScreen = document.getElementById("forecast-screen");
+const searchButton = document.getElementById("search-btn");
+const returnButton = document.getElementById("return-btn");
+searchButton.addEventListener("click", (e) => {
+  if (e.target.closest(".search-btn")) {
+    searchButton.classList.remove("active");
+    mainScreen.classList.remove("active");
+    forecastScreen.classList.add("active");
+    returnButton.classList.add("active");
+  }
+});
+returnButton.addEventListener("click", (e) => {
+  if (e.target.closest(".return-btn")) {
+    forecastScreen.classList.remove("active");
+    returnButton.classList.remove("active");
+    searchButton.classList.add("active");
+    mainScreen.classList.add("active");
+  }
+});
