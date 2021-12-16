@@ -97,6 +97,7 @@ body {
   text-align: center;
   padding: 0.5em;
   transition: border 0.3s ease;
+  color: wheat;
 }
 .search-input:focus {
   border-bottom: 2px solid green;
@@ -151,6 +152,7 @@ body {
   background: black;
   color: snow;
   position: relative;
+  height: 90vh;
 }
 .current-weather-date-container {
   position: absolute;
@@ -160,7 +162,7 @@ body {
 .current-weather-location {
   display: flex;
   gap: 5px;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .current-weather-country {
   display: flex;
@@ -203,18 +205,18 @@ body {
 .daily-forecast {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 .forecast-content {
   width: 300px;
   height: 260px;
-
   color: aliceblue;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 }
 .date {
   font-size: 1.8em;
@@ -228,15 +230,11 @@ body {
   position: relative;
   justify-content: flex-end;
 }
-.forecast-weather-desc {
-  position: absolute;
-  bottom: 20%;
-}
+
 .summary-item {
   display: flex;
   gap: 5px;
   font-size: 1.5em;
-  margin-top: -20%;
 }
 .forecast-L {
   border-left: 3px solid;
