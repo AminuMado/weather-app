@@ -68,17 +68,48 @@ body {
 .convert-units-btn:hover {
   background-color: tomato;
 }
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    /* transform: scale(0); */
+  }
+
+  100% {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+}
 .main-screen {
   display: none;
 }
+
 .main-screen.active {
   display: block;
+  animation: fade_in_show 1.5s;
 }
+.error.active {
+  color: goldenrod;
+  animation: fade_in_show 1s;
+}
+
+/* .main-screen {
+  opacity: 0;
+  display: none;
+  transition: all 1s ease;
+  transform: translateY(0px);
+}
+.main-screen.active {
+  opacity: 1;
+  display: block;
+  transition: all 1s ease;
+  transform: translateY(0px);
+} */
 .forecast-screen {
   display: none;
 }
 .forecast-screen.active {
   display: block;
+  animation: fade_in_show 2.5s;
 }
 .main-h3 {
   font-size: 3em;
@@ -86,7 +117,7 @@ body {
   text-align: center;
 }
 .search-input {
-  flex: 1;
+  /* flex: 1; */
   justify-self: center;
   background: transparent;
   outline: 0;

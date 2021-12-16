@@ -50,6 +50,7 @@ const forecastScreen = document.getElementById("forecast-screen");
 const searchButton = document.getElementById("search-btn");
 const returnButton = document.getElementById("return-btn");
 const searchInput = document.getElementById("search-input");
+const errorMsg = document.getElementById("error");
 
 searchButton.addEventListener("click", (e) => {
   if (searchInput.value.trim() != "") {
@@ -63,6 +64,7 @@ searchButton.addEventListener("click", (e) => {
 
       weatherReport
         .then((response) => {
+          console.log(response);
           let report = response.json();
           return report;
         })
@@ -134,8 +136,11 @@ searchButton.addEventListener("click", (e) => {
               item.textContent = ` ${response.daily[index + 1].temp.max}°L`;
             }
           });
+          forecastScreenActive();
+        })
+        .catch((error) => {
+          errorMsg.classList.add("active");
         });
-      forecastScreenActive();
     }
   }
 });
@@ -148,11 +153,13 @@ returnButton.addEventListener("click", (e) => {
 function forecastScreenActive() {
   searchButton.classList.remove("active");
   mainScreen.classList.remove("active");
+
   forecastScreen.classList.add("active");
   returnButton.classList.add("active");
 }
 function mainScreenActive() {
   forecastScreen.classList.remove("active");
+  errorMsg.classList.remove("active");
   returnButton.classList.remove("active");
   searchButton.classList.add("active");
   mainScreen.classList.add("active");
