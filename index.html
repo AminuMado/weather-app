@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/22fd8d6e3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  <link rel="icon" href="assets/favicon.svg"></head>
+  <body>
+    <div class="header">
+      <div class="nav-icon-container">
+        <img
+          class="openweathermap-icon"
+          src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"
+          alt="openweathermap-logo"
+        />
+        <button id="return-btn" class="return-btn">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </button>
+      </div>
+    </div>
+    <div id="main" class="main">
+      <div id="main-screen" class="main-screen active">
+        <div id="weather-form" class="weather-form">
+          <div class="form-div">
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              placeholder="Your city here"
+            />
+            <button id="search-btn" class="search-btn active">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+          </div>
+          <small id="error" class="error"
+            >Location not found. Search must be in the form of "City", "City,
+            State" or "City, Country".</small
+          >
+        </div>
+      </div>
+      <div id="forecast-screen" class="forecast-screen">
+        <div id="current-weather-container" class="current-weather-container">
+          <input
+            type="checkbox"
+            id="toggleButton"
+            class="toggleButton"
+            value="off"
+          />
+          <div class="current-weather-date-container">
+            <p id="current-weather-date" class="current-weather-date"></p>
+            <p id="current-weather-time" class="current-weather-time"></p>
+          </div>
+          <div id="current-weather-location" class="current-weather-location">
+            <p id="current-weather-city" class="current-weather-city"></p>
+            <p id="current-weather-country" class="current-weather-country"></p>
+          </div>
+          <div
+            id="current-weather-gif-container"
+            class="current-weather-gif-container"
+          >
+            <div id="current-weather-desc" class="current-weather-desc"></div>
+          </div>
+          <div class="current-weather-details-container">
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Feels Like</div>
+                <div class="weather-details-data" id="feels-like"></div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Humidity</div>
+                <div class="weather-details-data" id="humidity"></div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Chance of Rain</div>
+                <div class="weather-details-data" id="chance-of-rain"></div>
+              </div>
+            </div>
+            <div class="weather-details">
+              <div class="weather-details-icon"></div>
+              <div class="weather-details-info">
+                <div class="weather-details-label">Wind Speed</div>
+                <div class="weather-details-data" id="wind-speed"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="daily-forecast" class="daily-forecast">
+          <div id="forecast-content" class="forecast-content">
+            <div id="date" class="date"></div>
+            <div id="weather-gif" class="weather-gif"></div>
+            <div id="forecast-weather-desc" class="forecast-weather-desc"></div>
+            <div id="forecast-summary">
+              <div class="summary-item">
+                <div id="forecast-H" class="forecast-H"></div>
+                <div id="forecast-L" class="forecast-L"></div>
+              </div>
+            </div>
+          </div>
+          <div id="forecast-content" class="forecast-content">
+            <div id="date" class="date"></div>
+            <div id="weather-gif" class="weather-gif"></div>
+            <div id="forecast-weather-desc" class="forecast-weather-desc"></div>
+            <div id="forecast-summary">
+              <div class="summary-item">
+                <div id="forecast-H" class="forecast-H"></div>
+                <div id="forecast-L" class="forecast-L"></div>
+              </div>
+            </div>
+          </div>
+          <div id="forecast-content" class="forecast-content">
+            <div id="date" class="date"></div>
+            <div id="weather-gif" class="weather-gif"></div>
+            <div id="forecast-weather-desc" class="forecast-weather-desc"></div>
+            <div id="forecast-summary">
+              <div class="summary-item">
+                <div id="forecast-H" class="forecast-H"></div>
+                <div id="forecast-L" class="forecast-L"></div>
+              </div>
+            </div>
+          </div>
+          <div id="forecast-content" class="forecast-content">
+            <div id="date" class="date"></div>
+            <div id="weather-gif" class="weather-gif"></div>
+            <div id="forecast-weather-desc" class="forecast-weather-desc"></div>
+            <div id="forecast-summary">
+              <div class="summary-item">
+                <div id="forecast-H" class="forecast-H"></div>
+                <div id="forecast-L" class="forecast-L"></div>
+              </div>
+            </div>
+          </div>
+          <div id="forecast-content" class="forecast-content">
+            <div id="date" class="date"></div>
+            <div id="weather-gif" class="weather-gif"></div>
+            <div id="forecast-weather-desc" class="forecast-weather-desc"></div>
+            <div id="forecast-summary">
+              <div class="summary-item">
+                <div id="forecast-H" class="forecast-H"></div>
+                <div id="forecast-L" class="forecast-L"></div>
+              </div>
+            </div>
+          </div>
+          <div id="forecast-content" class="forecast-content">
+            <div id="date" class="date"></div>
+            <div id="weather-gif" class="weather-gif"></div>
+            <div id="forecast-weather-desc" class="forecast-weather-desc"></div>
+            <div id="forecast-summary">
+              <div class="summary-item">
+                <div id="forecast-H" class="forecast-H"></div>
+                <div id="forecast-L" class="forecast-L"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Copyright © 2021 AminuMado</p>
+      <a href="https://github.com/AminuMado" target="_blank">
+        <i class="fab fa-github github-logo"></i>
+      </a>
+    </footer>
+  <script defer src="bundle.js"></script></body>
+</html>
