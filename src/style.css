@@ -92,18 +92,6 @@ body {
   animation: fade_in_show 1s;
 }
 
-/* .main-screen {
-  opacity: 0;
-  display: none;
-  transition: all 1s ease;
-  transform: translateY(0px);
-}
-.main-screen.active {
-  opacity: 1;
-  display: block;
-  transition: all 1s ease;
-  transform: translateY(0px);
-} */
 .forecast-screen {
   display: none;
 }
@@ -204,7 +192,8 @@ body {
 }
 .current-weather-gif-container {
   width: 40%;
-  min-width: 285px;
+  min-width: 300px;
+  min-height: 300px;
   position: relative;
   display: flex;
   align-items: center;
