@@ -12,9 +12,10 @@ import {
 
 const app = {
   init: () => {
-    document
-      .getElementById("search-btn")
-      .addEventListener("click", app.fetchWeather);
+    document.getElementById("search-btn").addEventListener("click", (e) => {
+      e.preventDefault();
+      app.fetchWeather(e);
+    });
     document
       .getElementById("return-btn")
       .addEventListener("click", app.mainScreenActive);

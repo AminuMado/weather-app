@@ -25,7 +25,7 @@
     </div>
     <div id="main" class="main">
       <div id="main-screen" class="main-screen active">
-        <div id="weather-form" class="weather-form">
+        <form onsubmit="false" id="weather-form" class="weather-form">
           <div class="form-div">
             <input
               type="text"
@@ -33,7 +33,7 @@
               id="search-input"
               placeholder="Your city here"
             />
-            <button id="search-btn" class="search-btn active">
+            <button type="submit" id="search-btn" class="search-btn active">
               <i class="fas fa-search search-icon"></i>
             </button>
           </div>
@@ -41,7 +41,7 @@
             >Location not found. Search must be in the form of "City", "City,
             State" or "City, Country".</small
           >
-        </div>
+        </form>
       </div>
       <div id="forecast-screen" class="forecast-screen">
         <div id="current-weather-container" class="current-weather-container">
