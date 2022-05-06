@@ -127,12 +127,11 @@ body {
   background-color: #eb6e4b;
   color: black;
   border: 0;
-  border-radius: 30px;
+  border-radius: 50%;
   outline: 0;
   font-size: 1.8em;
   width: 1.5em;
   height: 1.5em;
-  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -141,7 +140,7 @@ body {
 }
 .search-btn.active,
 .return-btn.active {
-  display: block;
+  display: flex;
 }
 .search-btn:hover,
 .return-btn:hover {
