@@ -198,6 +198,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.current-weather-gif-container > img {
+  min-width: 290px;
+  min-height: 290px;
+}
 .current-weather-desc {
   position: absolute;
   bottom: 10%;
