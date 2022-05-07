@@ -1,10 +1,17 @@
-# Weather
+# Weather App
 
 Project to create **Weather APP** using Vanilla JS, CSS and HTML
 
-From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/weather-app).
+🔗 **Live preview:** <p><a href="https://aminumado.github.io/weather-app/" target="_blank" rel="noopener noreferrer">View the project here!</a> 👀</p>
 
-🔗 **Live preview:** [here](https://aminumado.github.io/weather-app/)
+<h3>Summary</h3>
+
+<p>This is a Weather App where you can search a city and have weather details displayed. <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/weather-app" target="_blank" rel="noopener noreferrer">The Odin Project's</a> javascript curriculum. The goal of this project was to learn how to use asynchronous javascript, openweathermap api and promise.</p>
+<h3>Demo GIF</h3>
+
+<h4>Desktop</h4>
+
+![](./src/assets/DemoGif/demo.gif)
 
 ## Built with
 
@@ -12,7 +19,7 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-s
 
 - HTML
 - CSS
-- JS
+- JavaScript
 
 ### Tools
 
